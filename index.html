@@ -3,7 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=RocknRoll+One&family=Sanchez:ital@0;1&family=Text+Me+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="src/index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <form id="form-search">
+          <input
+            class="text-box"
+            type="search"
+            id="form-search-bar"
+            placeholder="Enter a city..."
+            required
+          />
+          <input class="button" type="submit" value="Search" />
+        </form>
+      </header>
+      <div class="weather-info">
+        <div class="current">
+          <h1 class="current-city">Sydney</h1>
+          <p class="current-info">
+            <span id="current-date">Saturday 10:36</span>,
+            <span id="condition"> Clear Sky</span>
+            <br />
+            Humidity:
+            <strong id="humidity">30</strong><strong>%</strong>, Wind:
+            <strong>4.3km/h</strong>
+          </p>
+        </div>
+        <div class="current-temp">
+          <span class="current-temp-icon"> ☀️ </span>
+          <span class="current-temp-value">36</span>
+          <span class="current-temp-unit">°C</span>
+        </div>
+      </div>
+      <footer>This project was coded by Rachael Alexander</footer>
+    </div>
+  </body>
 </html>
